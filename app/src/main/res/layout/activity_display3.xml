@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:padding="40dp"> <!-- Blue color -->
+
+        <!-- Screen Size -->
+        <LinearLayout
+            android:id="@+id/screen_size_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/screen_size_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Screen Size: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/screen_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/screen_size_layout"
+            android:background="#00BCD4" />
+
+        <!-- Android Version -->
+        <LinearLayout
+            android:id="@+id/android_version_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/screen_size_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/android_version_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Version: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/android_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/android_version_layout"
+            android:background="#03A9F4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+        <!-- OS Version -->
+        <LinearLayout
+            android:id="@+id/os_version_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/android_version_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/os_version_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OS Version: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/os_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/os_version_layout"
+            android:background="#00BCD4" />
+        <!-- Mobile Operator -->
+        <LinearLayout
+            android:id="@+id/mobile_operator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/os_version_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mobile_operator_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Operator: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mobile_operator_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/mobile_operator_layout"
+            android:background="#00BCD4" />
+        <!-- Manufacturer -->
+        <LinearLayout
+            android:id="@+id/manufacturer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobile_operator_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/manufacturer_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manufacturer: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/manufacturer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/manufacturer_layout"
+            android:background="#00BCD4" />
+        <!-- Model -->
+        <LinearLayout
+            android:id="@+id/model_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/manufacturer_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/model_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/model_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/model_layout"
+            android:background="#00BCD4" />
+        <!-- Build Number -->
+        <LinearLayout
+            android:id="@+id/build_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/model_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/build_number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Build Number: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/build_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/build_number_layout"
+            android:background="#00BCD4" />
+        <!-- OS Name -->
+        <LinearLayout
+            android:id="@+id/os_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/build_number_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/os_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OS Name: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/os_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/os_name_layout"
+            android:background="#00BCD4" />
+        <!-- SDK -->
+        <LinearLayout
+            android:id="@+id/sdk_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/os_name_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sdk_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SDK: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sdk_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/sdk_layout"
+            android:background="#00BCD4" />
+        <!-- Kernel -->
+        <LinearLayout
+            android:id="@+id/kernel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdk_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/kernel_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kernel: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kernel_text"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/kernel_layout"
+            android:background="#00BCD4" />
+        <!-- Boot Loader -->
+        <LinearLayout
+            android:id="@+id/boot_loader_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kernel_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/boot_loader_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boot Loader: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/boot_loader_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/boot_loader_layout"
+            android:background="#00BCD4" />
+        <!-- Front Camera Resolution -->
+        <LinearLayout
+            android:id="@+id/front_camera_resolution_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boot_loader_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/front_camera_resolution_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Front Camera Res: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/front_camera_resolution_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/front_camera_resolution_layout"
+            android:background="#00BCD4" />
+        <!-- Back Camera Resolution -->
+        <LinearLayout
+            android:id="@+id/back_camera_resolution_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/front_camera_resolution_layout"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/back_camera_resolution_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back Camera Res: "
+                android:textColor="#E91E63"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/back_camera_resolution_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="39dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/back_camera_resolution_layout"
+            android:background="#00BCD4" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
